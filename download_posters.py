@@ -124,7 +124,7 @@ def main():
     sheets_service = discovery.build('sheets', 'v4', http=sheets_http,
                               discoveryServiceUrl=discoveryUrl)
 
-    spreadsheetId = '1TArcgKAikMIyc4X70C0yntmbsMeGpG6woLRCqm8FL0I'
+    spreadsheetId = '1rnB9U2I5RN9sZ07b5Olh8MgQYrd70w4UN98ml0C81LM'
     rangeName = 'Form responses 1!A2:K'
     result = sheets_service.spreadsheets().values().get(
         spreadsheetId=spreadsheetId, range=rangeName).execute()
